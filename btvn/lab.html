@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <div id="num"></div>
+    <div id="name"></div>
+    <button onclick="plus()">+</button>
+
+    <button onclick="subtraction()">-</button>
+
+    <button onclick="random()">random</button>
+    <br>
+     -->
+      <script> 
+      
+        // // //xay dung do cao cua hinh tam giac
+
+        // for (let i = 0; i < 10; i++) {
+        //   //tao hang (row) *
+        //   document.writeln(i);
+
+        //   for (let j = 0; j < i; j++) {
+        //     document.writeln(i);
+        //   }
+
+        //   //xuong dong khi hien thi ket qua cua tung hang
+        //   document.writeln("<br/>");
+        // }
+        // let n = 5;
+        // for (let i = 1; i < n; i++) {
+        //   for (let j = i; j < n; j++) {
+        //     document.writeln("*");
+        //   }
+        //   // for (let j = 1; j < i; j++) {
+        //   //   document.writeln("1");
+        //   // }
+        //   document.writeln("<br/>");
+        // }
+        // document.writeln("~~~~~~~~~~~~~");
+        // document.writeln("<br/>"); 
+      let n=5
+        for (let i = 0; i <= n - 1; i++) {
+                // document.writeln(i);
+          for (let j = 0; j <= n - i; j++) {
+            if (j == n - i) {
+              for (let k = 0; k <= 2* i; k++) {
+              document.writeln("1");
+                }
+          } else {
+            document.writeln("_");
+          }
+        }
+        document.writeln("</br>");
+      }
+
+      //  //tạo phần tử p    
+      //  var p = document.createElement("p");
+
+      //  //tạo phần tử text
+      //  var node = document.createTextNode("Some new text");
+
+      //  //gắn node vào p
+      //  p.appendChild(node);
+       
+      //  //Thay đổi một số thuộc tính của p
+      // //  p.appendChild(node);
+      // console.log("----p----",p);
+      //  p.style.backgroundColor = 'red';
+      //  p.style.padding = "10px";
+      //  p.style.color = "white";
+
+      //  var div = document.getElementById("demo");
+      //  //gắn p vào div
+      //  div.appendChild(p);
+
+      //  let s = document.createElement("p")
+      //  var node = document.createTextNode("1");
+
+      //  s.appendChild(node);
+      //  document.getElementById('num').appendChild(s);
+      //  console.log(document.getElementsByTagName("p"))
+      //  let num = document.getElementsByTagName("p")[1].innerHTML
+       
+      //  function plus(){
+      //    let Num = parseInt(document.getElementsByTagName("p")[1].innerHTML)
+      //    Num++;
+      //    document.getElementsByTagName("p")[1].innerHTML = Num
+      //  }
+      // function subtraction(){
+      //   let Num = parseInt(document.getElementsByTagName("p")[1].innerHTML)
+      //    Num--;
+      //    document.getElementsByTagName("p")[1].innerHTML = Num
+      // }
+      // function random(){
+      //   let name = [1,2,3,4,5,6,7,8,9,10]
+      //     let b = Math.floor(Math.random()*10)
+      //     console.log(b ) 
+      //     document.getElementById("name").innerHTML = name[b]
+      // }
+
+      // document.writeln("hề lố")
+    </script>
+  </body>
+</html>

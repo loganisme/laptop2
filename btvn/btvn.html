@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: space-around;
+        }
+        .container .item ul li {
+            list-style: none;
+        }
+        .container .item {
+            /* background-color: blueviolet; */
+            text-align: center;
+        }
+        .container .item ul {
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item">
+            <ul>
+                <li>about</li>
+                <li>event</li>
+            </ul>
+        </div>
+        <div class="item">
+            <ul>
+                <li>about</li>
+                <li>event</li>
+            </ul>
+        </div>
+        <div class="item">
+            <ul>
+                <li>about</li>
+                <li>event</li>
+            </ul>
+        </div>
+        <div class="item">
+            <p>Download</p>
+            <div class="oper">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/adobe-illustrator.png"/>
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/adobe-illustrator.png"/>
+            </div>
+            <div class="social">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/adobe-illustrator.png"/>
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/adobe-illustrator.png"/>
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/adobe-illustrator.png"/>
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/adobe-illustrator.png"/>
+            </div>
+        </div>
+    </div>
+    <script>
+        let a = [9,7,9,0,7,8,387,123,456]
+
+        for(let i = 0; i< a.length ; i++){
+            if(a[i] % 2 == 0 ){
+                console.log(a[i])
+            }
+        }
+        // let a = prompt("nhập tên")
+        // let b =  prompt("nhập năm sinh")
+        // let c = "30"
+        // console.log( parseInt(c) )
+        // console.log(a, 2021 - b)
+
+    </script>
+</body>
+</html>

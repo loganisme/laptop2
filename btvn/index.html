@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div onmousemove="changeShape()" id="newDomTest">Đây là thẻ div</div>
+    <div class="domClass">đây là class domclass</div>
+    <div class="domClass">đây là class domclass2</div>
+
+    <h1 id="name"></h1>
+    <button onclick="random()">Random</button>
+    <script>
+      let divA = document.getElementById("newDomTest");
+
+      divA.innerHTML = "";
+      // // divA.innerText = "hehehehhehe"
+      // // divA.innerHTML = "test innerHTML"
+      // // divA.textContent = "test textcontent"
+      // console.dir(document.getElementById("newDomTest"))
+      // // document.getElementsByClassName("domClass")[0].innerHTML = "đây là text đổi sau khi dùng js"
+      // console.log(document.getElementsByClassName("domClass")[0])
+      divA.style.width = "300px";
+      divA.style.height = "300px";
+      divA.style.background = "pink";
+      console.log(document.getElementsByTagName("div"));
+
+      function changeShape() {
+        divA.style.borderRadius = "50%";
+        divA.style.background = "yellow";
+      }
+
+      function random() {
+        let name = [
+          "Phúc",
+          "Trịnh Huy",
+          "Hiếu",
+          "Lâm",
+          "Hoàng Anh",
+          "Lưu Huy",
+          "Tuệ",
+          "Bảo",
+          "Minh",
+          "Trung",
+        ];
+        let num = Math.floor(Math.random() *10);
+        // console.log(num);
+        // console.log(document.getElementById("name"));
+        document.getElementById("name").innerHTML = name[num] ;
+      }
+    //   Tuệ, Trịnh Huy, Bảo - Nhóm 1
+    // lưu huy , minh, hoàng anh - nhóm 2
+    </script>
+  </body>
+</html>
